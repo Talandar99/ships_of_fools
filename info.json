@@ -1,0 +1,16 @@
+{
+    "name": "ships_of_fools",
+    "version": "0.0.0",
+    "title": "Ships Of Fools",
+    "author": "Talandar",
+    "dependencies": [
+        "base >= 2.0",
+        "space-age",
+        "quality",
+        "pelagos"
+    ],
+    "description": "Space Age Ovehaul built around cargo ships mod",
+    "factorio_version": "2.0",
+    "space_travel_required": true,
+    "spoiling_required": true
+}
