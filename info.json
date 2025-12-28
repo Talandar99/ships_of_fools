@@ -1,6 +1,6 @@
 {
     "name": "ships_of_fools",
-    "version": "0.0.0",
+    "version": "0.2.0",
     "title": "Ships Of Fools",
     "author": "Talandar",
     "dependencies": [
@@ -19,7 +19,6 @@
         "Electric_flying_enemies",
         "AquiloTrenches",
         "skewer_planet_vesta",
-        "demolisher-revenge",
         "carbonut_agriculture",
         "burner_foundry",
         "sand_seas_of_arig",
