@@ -1,6 +1,6 @@
 {
     "name": "ships_of_fools",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "title": "Ships Of Fools",
     "author": "Talandar",
     "dependencies": [
@@ -21,6 +21,7 @@
         "skewer_planet_vesta",
         "carbonut_agriculture",
         "burner_foundry",
+        "tungsten_mining_require_lube",
         "sand_seas_of_arig",
         "spoiled_trenches_of_fulgora",
         "true_ending_is_shattered_planet",

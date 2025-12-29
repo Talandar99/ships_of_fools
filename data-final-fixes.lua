@@ -105,5 +105,5 @@ hide_technology_and_rewire("legendary-quality", "quality-module")
 for _, furnace in pairs(data.raw["mining-drill"]) do
 	furnace.allowed_effects = { "consumption", "speed", "productivity", "pollution" }
 end
-data.raw["assembing-machine"]["crusher"].allowed_effects = { "consumption", "speed", "productivity", "pollution" }
+data.raw["assembling-machine"]["crusher"].allowed_effects = { "consumption", "speed", "productivity", "pollution" }
 data.raw["furnace"]["recycler"].allowed_effects = { "consumption", "speed", "productivity", "pollution" }
