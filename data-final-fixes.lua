@@ -102,8 +102,8 @@ hide_by_name("electric-mining-drill")
 -- quality changes
 hide_technology_and_rewire("epic-quality", "quality-module")
 hide_technology_and_rewire("legendary-quality", "quality-module")
-for _, furnace in pairs(data.raw["mining-drill"]) do
-	furnace.allowed_effects = { "consumption", "speed", "productivity", "pollution" }
-end
+--for _, furnace in pairs(data.raw["mining-drill"]) do
+--	furnace.allowed_effects = { "consumption", "speed", "productivity", "pollution" }
+--end
 data.raw["assembling-machine"]["crusher"].allowed_effects = { "consumption", "speed", "productivity", "pollution" }
 data.raw["furnace"]["recycler"].allowed_effects = { "consumption", "speed", "productivity", "pollution" }

@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+Date: 2026-02-02
+  Changes:
+    - added "hungry biolab"
+    - added "fusion machines"
+    - first public release
+    - assembling machine 2 is now named "Electric assembling machine"
+  Balancing:
+    - burner assembling machine crafting speed increased (0.25 -> 0.50)
+    - steam assembling machine crafting speed increased (0.50 -> 0.75)
+    - electric assembling machine crafting speed increased (0.75 -> 1.00)
+---------------------------------------------------------------------------------------------------
 Version: 0.2.1
 Date: 2025-12-29
   Changes:
