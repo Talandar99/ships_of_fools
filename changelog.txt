@@ -1,6 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+Date: 2026-02-11
+  Changes:
+    - added Cerys because combined with "Nuclear Science Pack" create intereting nuclear progression
+    - added Arig science pack to Aquilo discovery requirements
+---------------------------------------------------------------------------------------------------
 Version: 0.3.0
-Date: 2026-02-02
+Date: 2026-02-11
   Changes:
     - added "hungry biolab"
     - added "fusion machines"
