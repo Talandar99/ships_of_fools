@@ -1,4 +1,32 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.0
+Date: 2026-02-12
+  Changes:
+    - added molten plastic
+    - molten plastic settings "Completly replace plastic bars" and "dynamic recipe creation" 
+      are now set to true and hidden
+    - pelagos and arig addition to aquilo and promethium science via settings are now set to true and hidden
+    - fulgoran enemy setting to disable loot is now set to true and hidden
+    - vanilla space platform thruster now require new ingredients +10 tungsten plates +10 carbon fiber
+    - vanilla space platform thruster now require advanced asteroid processing and asteroid reprocessing to unlock
+---------------------------------------------------------------------------------------------------
+Version: 0.5.0
+Date: 2026-02-11
+  Changes:
+    - removed steel furnace from game
+    - updated science pack recipes for logistic and automation science packs in order to 
+      remove APS Pelagos variants
+    - foundation technology now require promethium science pack
+    - foundation now require promethium plate in recipe
+    - deep miner is now burner
+    - deep miner can be crafted only on space station
+    - utility science pack can be crafted only on space station
+    - quality assembler can be crafted only on space station
+    - thruster can be crafted only on space station
+    - ethanol thruster can be crafted only on space station
+    - asteroid collector can be crafted only on space station
+    - diesel asteroid collector can be crafted only on space station
+---------------------------------------------------------------------------------------------------
 Version: 0.4.0
 Date: 2026-02-11
   Changes:

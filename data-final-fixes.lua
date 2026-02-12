@@ -1,3 +1,33 @@
+local function remove_recipe_unlock(tech_name, recipe_name)
+	local tech = data.raw.technology[tech_name]
+	if not tech or not tech.effects then
+		return
+	end
+
+	for i = #tech.effects, 1, -1 do
+		local effect = tech.effects[i]
+		if effect.type == "unlock-recipe" and effect.recipe == recipe_name then
+			table.remove(tech.effects, i)
+		end
+	end
+
+	-- opcjonalnie czyści pustą tablicę
+	if #tech.effects == 0 then
+		tech.effects = nil
+	end
+end
+local function remove_prerequisite(tech_name, prerequisite_to_remove)
+	local tech = data.raw.technology[tech_name]
+	if not tech or not tech.prerequisites then
+		return
+	end
+
+	for i = #tech.prerequisites, 1, -1 do
+		if tech.prerequisites[i] == prerequisite_to_remove then
+			table.remove(tech.prerequisites, i)
+		end
+	end
+end
 local function hide_technology_and_rewire(old_tech, new_tech)
 	local old = data.raw.technology[old_tech]
 	local new = data.raw.technology[new_tech]
@@ -91,10 +121,16 @@ data.raw["assembling-machine"]["assembling-machine-2"].next_upgrade = "diesel-as
 data.raw["assembling-machine"]["diesel-assembling-machine"].next_upgrade = nil
 hide_by_name("assembling-machine-1")
 hide_by_name("assembling-machine-3")
+
 table.insert(
 	data.raw["recipe"]["assembling-machine-2"].ingredients,
 	{ type = "item", name = "iron-plate", amount = 15 }
 )
+-- steel furnace
+hide_technology_and_rewire("advanced-material-processing", "logistic-science-pack")
+data.raw["furnace"]["stone-furnace"].next_upgrade = nil
+data.raw["furnace"]["desiccation-furnace"].next_upgrade = nil
+hide_by_name("steel-furnace")
 -- mining drill changes
 hide_technology_and_rewire("electric-mining-drill", "diesel-mining-drill")
 hide_by_name("electric-mining-drill")
@@ -102,8 +138,66 @@ hide_by_name("electric-mining-drill")
 -- quality changes
 hide_technology_and_rewire("epic-quality", "quality-module")
 hide_technology_and_rewire("legendary-quality", "quality-module")
---for _, furnace in pairs(data.raw["mining-drill"]) do
---	furnace.allowed_effects = { "consumption", "speed", "productivity", "pollution" }
---end
 data.raw["assembling-machine"]["crusher"].allowed_effects = { "consumption", "speed", "productivity", "pollution" }
 data.raw["furnace"]["recycler"].allowed_effects = { "consumption", "speed", "productivity", "pollution" }
+
+-- science
+hide_by_name("aps-pelagos-automation-science-pack")
+hide_by_name("aps-pelagos-logistic-science-pack")
+data.raw["recipe"]["automation-science-pack"].ingredients = {
+	{ type = "item", name = "iron-gear-wheel", amount = 1 },
+	{ type = "item", name = "wood", amount = 1 },
+}
+data.raw["recipe"]["logistic-science-pack"].ingredients = {
+	{ type = "item", name = "transport-belt", amount = 1 },
+	{ type = "item", name = "wood-transport-belt", amount = 1 },
+}
+
+-- foundation promethium science
+data.raw["technology"]["foundation"].unit.ingredients = data.raw["technology"]["research-productivity"].unit.ingredients
+table.insert(data.raw["technology"]["foundation"].prerequisites, "promethium-science-pack")
+table.insert(
+	data.raw["recipe"]["foundation"].ingredients,
+	{ type = "item", name = "msppr-promethium-plate", amount = 1 }
+)
+
+-- lignumis deep miner is now burner
+data.raw["mining-drill"]["deep-miner"].energy_source = {
+	fuel_inventory_size = 1,
+	type = "burner",
+	usage_priority = "secondary-input",
+	emissions_per_minute = { pollution = 200, noise = 2000 },
+}
+data.raw["mining-drill"]["deep-miner"].energy_usage = "15MW"
+
+--thruster changes
+--------------------------------------------------------------------------------------------
+remove_prerequisite("planet-discovery-vulcanus", "space-platform-thruster")
+remove_prerequisite("planet-discovery-fulgora", "space-platform-thruster")
+remove_prerequisite("planet-discovery-nauvis", "space-platform-thruster")
+remove_prerequisite("advanced-asteroid-processing", "space-platform-thruster")
+remove_recipe_unlock("space-platform", "carbonic-asteroid-crushing")
+table.insert(
+	data.raw["technology"]["advanced-asteroid-processing"].effects,
+	{ type = "unlock-recipe", recipe = "carbonic-asteroid-crushing" }
+)
+remove_recipe_unlock("advanced-asteroid-processing", "advanced-thruster-fuel")
+remove_recipe_unlock("advanced-asteroid-processing", "advanced-thruster-oxidizer")
+table.insert(
+	data.raw["technology"]["space-platform-thruster"].effects,
+	{ type = "unlock-recipe", recipe = "advanced-thruster-fuel" }
+)
+table.insert(
+	data.raw["technology"]["space-platform-thruster"].effects,
+	{ type = "unlock-recipe", recipe = "advanced-thruster-oxidizer" }
+)
+table.insert(data.raw["technology"]["space-platform-thruster"].prerequisites, "advanced-asteroid-processing")
+table.insert(data.raw["technology"]["space-platform-thruster"].prerequisites, "asteroid-reprocessing")
+data.raw["technology"]["space-platform-thruster"].unit.ingredients =
+	data.raw["technology"]["advanced-asteroid-processing"].unit.ingredients
+data.raw["technology"]["space-platform-thruster"].unit.count = 1000
+table.insert(data.raw["technology"]["space-platform-thruster"].unit.ingredients, { "metallurgic-science-pack", 1 })
+table.insert(data.raw["recipe"]["thruster"].ingredients, { type = "item", name = "tungsten-plate", amount = 10 })
+table.insert(data.raw["recipe"]["thruster"].ingredients, { type = "item", name = "carbon-fiber", amount = 10 })
+--------------------------------------------------------------------------------------------
+require("space-locked-recipes")

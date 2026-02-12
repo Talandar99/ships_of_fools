@@ -1,6 +1,6 @@
 {
     "name": "ships_of_fools",
-    "version": "0.4.0",
+    "version": "0.6.0",
     "title": "Ships Of Fools",
     "author": "Talandar",
     "dependencies": [
@@ -37,6 +37,7 @@
         "autofuel",
         "hungry_biolab",
         "Cerys-Moon-of-Fulgora",
+        "molten_plastic",
         "! planet-muluna",
         "! dredgeworks",
         "! Igrys",

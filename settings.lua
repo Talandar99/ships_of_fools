@@ -14,8 +14,18 @@ local function force_setting(setting_type, setting_name, value)
 	end
 end
 
+-- force pelagos science addition to progression
+force_setting("bool", "pelagos-contribute-to-aquilo-discovery", true)
+force_setting("bool", "pelagos-contribute-to-promethium-science", true)
 -- pelagos methane on vesta
 force_setting("bool", "pelagos-methane-on-vesta", true)
 -- lignumis
 force_setting("bool", "ltdi-enable-progressive-recipes-for-belts", true)
---
+-- force arig science addition to progression
+force_setting("bool", "compression-for-aquilo", true)
+force_setting("bool", "compression-for-promethium", true)
+-- fulgoran enemy disable loot
+force_setting("bool", "fulgenemy-disable-loot", true)
+-- molten plastic
+force_setting("bool", "replace-plastic", true)
+force_setting("bool", "dynamic-recipes", true)
