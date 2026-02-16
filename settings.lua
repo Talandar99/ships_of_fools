@@ -14,6 +14,11 @@ local function force_setting(setting_type, setting_name, value)
 	end
 end
 
+-- enable all settings in msppr
+force_setting("bool", "space-spidertron-compatibility", true)
+force_setting("bool", "lignumis-msppr", true)
+force_setting("bool", "quality-assembler-require-promethium-plates", true)
+force_setting("bool", "msppr-cerys", true)
 -- force pelagos science addition to progression
 force_setting("bool", "pelagos-contribute-to-aquilo-discovery", true)
 force_setting("bool", "pelagos-contribute-to-promethium-science", true)

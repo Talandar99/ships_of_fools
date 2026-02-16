@@ -128,8 +128,11 @@ table.insert(
 )
 -- steel furnace
 hide_technology_and_rewire("advanced-material-processing", "logistic-science-pack")
-data.raw["furnace"]["stone-furnace"].next_upgrade = nil
-data.raw["furnace"]["desiccation-furnace"].next_upgrade = nil
+for _, furnace in pairs(data.raw["furnace"]) do
+	if furnace.next_upgrade == "steel-furnace" then
+		furnace.next_upgrade = nil
+	end
+end
 hide_by_name("steel-furnace")
 -- mining drill changes
 hide_technology_and_rewire("electric-mining-drill", "diesel-mining-drill")
@@ -199,5 +202,7 @@ data.raw["technology"]["space-platform-thruster"].unit.count = 1000
 table.insert(data.raw["technology"]["space-platform-thruster"].unit.ingredients, { "metallurgic-science-pack", 1 })
 table.insert(data.raw["recipe"]["thruster"].ingredients, { type = "item", name = "tungsten-plate", amount = 10 })
 table.insert(data.raw["recipe"]["thruster"].ingredients, { type = "item", name = "carbon-fiber", amount = 10 })
+
+table.insert(data.raw["technology"]["promethium-science-pack"].prerequisites, "s1_gas_manipulation_science_pack")
 --------------------------------------------------------------------------------------------
 require("space-locked-recipes")

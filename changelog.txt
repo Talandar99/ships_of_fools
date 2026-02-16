@@ -1,4 +1,24 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.8.0
+Date: 2026-02-16
+  Changes:
+    - all multi surface promethium plate recipe settings are now set to true and hidden
+    - Vesta gas manipulation science pack is now require to research promethium
+    - Cubium is marked as incompatible because its fundamentally unbalanced
+    - Metal and stars is marked as incompatible because its fundamentally unbalanced
+---------------------------------------------------------------------------------------------------
+Version: 0.7.0
+Date: 2026-02-15
+  Changes:
+    - player no longer have gun on respawn
+    - added new required dependency "Offshore Pump Require Power"
+---------------------------------------------------------------------------------------------------
+Version: 0.6.1
+Date: 2026-02-12
+  Bugfixes:
+    - steel-furnace should be now removed from next updates of EVERY furnace that had it as next update
+      which should prevent errors associated to wrong next update
+---------------------------------------------------------------------------------------------------
 Version: 0.6.0
 Date: 2026-02-12
   Changes:
