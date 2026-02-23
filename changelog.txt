@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.9.0
+Date: 2026-02-24
+  Changes:
+    - added dynamic platform lighting as required dependency
+    - deep darkness setting for dynamic platform lighting is set to true and and hidden.
+    - all settings/options from nuclear science pack are set to true and locked
+    - added Tank Flamethrower Reworked by toshtaru to modlist. It makes tank Flamethrower work like handeld one 
+---------------------------------------------------------------------------------------------------
 Version: 0.8.0
 Date: 2026-02-16
   Changes:

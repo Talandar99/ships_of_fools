@@ -34,3 +34,11 @@ force_setting("bool", "fulgenemy-disable-loot", true)
 -- molten plastic
 force_setting("bool", "replace-plastic", true)
 force_setting("bool", "dynamic-recipes", true)
+-- dynamic_platform lighting force deep dark
+force_setting("bool", "dynamic_platform_deep_darkness", true)
+-- nuclear science pack
+force_setting("bool", "lock-nuclear-science-pack-behind-cerys", true)
+force_setting("bool", "refillable-mixed-oxide-reactor-equipment", true)
+force_setting("bool", "nuclear-assembling-machine", true)
+force_setting("bool", "refillable-fission-reactor-equipment", true)
+force_setting("bool", "nuclear-science-pack-centrifuge-prod-bonus", true)
