@@ -1,6 +1,6 @@
 {
     "name": "ships_of_fools",
-    "version": "0.9.0",
+    "version": "0.10.0",
     "title": "Ships Of Fools",
     "author": "Talandar",
     "dependencies": [
@@ -41,6 +41,7 @@
         "offshore_pump_require_power",
         "dynamic_platform_lighting",
         "toshtaru-tank-flamethrower-reworked",
+        "rocket_fuel_is_now_fluid",
         "! planet-muluna",
         "! cubium",
         "! metal-and-stars",
