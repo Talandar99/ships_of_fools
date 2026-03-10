@@ -11,7 +11,6 @@ local function remove_recipe_unlock(tech_name, recipe_name)
 		end
 	end
 
-	-- opcjonalnie czyści pustą tablicę
 	if #tech.effects == 0 then
 		tech.effects = nil
 	end
@@ -70,14 +69,10 @@ local function hide_technology_and_rewire(old_tech, new_tech)
 end
 
 local function hide_by_name(name)
-	-- ENTITY
 	for proto_type, proto in pairs(data.raw) do
 		local e = proto[name]
 		if e and proto_type ~= "item" and proto_type ~= "recipe" then
-			-- ukryj entity
 			e.hidden = true
-
-			-- jeśli jest częścią upgrade chaina, mining NIE MOŻE dawać hidden itemu
 			if e.next_upgrade and e.minable then
 				e.minable = {
 					mining_time = e.minable.mining_time or 0.2,
@@ -87,14 +82,12 @@ local function hide_by_name(name)
 		end
 	end
 
-	-- RECIPE
 	if data.raw.recipe[name] then
 		local r = data.raw.recipe[name]
 		r.hidden = true
 		r.enabled = false
 	end
 
-	-- ITEM (item-like)
 	local item_types = {
 		"item",
 		"item-with-entity-data",
