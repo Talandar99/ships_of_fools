@@ -114,6 +114,9 @@ data.raw["assembling-machine"]["assembling-machine-2"].next_upgrade = "diesel-as
 data.raw["assembling-machine"]["diesel-assembling-machine"].next_upgrade = nil
 hide_by_name("assembling-machine-1")
 hide_by_name("assembling-machine-3")
+data.raw["assembling-machine"]["burner-assembling-machine"].crafting_speed = 0.50
+data.raw["assembling-machine"]["steam-assembling-machine"].crafting_speed = 0.75
+data.raw["assembling-machine"]["assembling-machine-2"].crafting_speed = 1.00
 
 table.insert(
 	data.raw["recipe"]["assembling-machine-2"].ingredients,
@@ -196,6 +199,27 @@ table.insert(data.raw["technology"]["space-platform-thruster"].unit.ingredients,
 table.insert(data.raw["recipe"]["thruster"].ingredients, { type = "item", name = "tungsten-plate", amount = 10 })
 table.insert(data.raw["recipe"]["thruster"].ingredients, { type = "item", name = "carbon-fiber", amount = 10 })
 
+-- Vesta is needed for promethium
 table.insert(data.raw["technology"]["promethium-science-pack"].prerequisites, "s1_gas_manipulation_science_pack")
 --------------------------------------------------------------------------------------------
+
+table.insert(data.raw["technology"]["planet-discovery-nauvis"].prerequisites, "planetslib-cerys-cargo-drops")
+data.raw["technology"]["moon-discovery-cerys"].prerequisites =
+	{ "planet-discovery-fulgora", "advanced-asteroid-processing" }
+-- Arig + maraxsis stuff
+table.insert(data.raw["technology"]["planet-discovery-maraxsis"].prerequisites, "planetaris-compression-science")
+table.insert(data.raw["technology"]["planetaris-heavy-glass"].prerequisites, "maraxsis-glassworking")
+data.raw["item"]["maraxsis-glass-panes"].localised_name = { "item-name.maraxsis-pressure-resistant-glass" }
+table.insert(data.raw["technology"]["planetaris-heavy-glass"].unit.ingredients, { "hydraulic-science-pack", 1 })
+table.insert(
+	data.raw["recipe"]["planetaris-heavy-glass"].ingredients,
+	{ type = "item", name = "maraxsis-glass-panes", amount = 1 }
+)
+table.insert(
+	data.raw["technology"]["planet-discovery-maraxsis"].unit.ingredients,
+	{ "planetaris-compression-science-pack", 1 }
+)
 require("space-locked-recipes")
+
+-- science pack
+table.insert(data.raw["technology"]["logistic-science-pack"].prerequisites, "logistics")

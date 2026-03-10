@@ -42,3 +42,15 @@ force_setting("bool", "refillable-mixed-oxide-reactor-equipment", true)
 force_setting("bool", "nuclear-assembling-machine", true)
 force_setting("bool", "refillable-fission-reactor-equipment", true)
 force_setting("bool", "nuclear-science-pack-centrifuge-prod-bonus", true)
+force_setting("bool", "lock-mixed-oxide-reactor-behind-maraxsis-salt-reactor", true)
+
+-- fusion machines
+force_setting("bool", "refillable-fusion-reactor-equipment", true)
+force_setting("bool", "fusion-assembling-machine", true)
+force_setting("bool", "fusion-lab", true)
+force_setting("bool", "fusion-reactor-and-generator-buff", true)
+force_setting("bool", "fusion-fuel-cell-buff", true)
+
+force_setting("bool", "deep-sea-mechanic", true)
+force_setting("bool", "block-elevated-rails-on-deep-sea", true)
+force_setting("bool", "generate-uranium-only-on-water", true)

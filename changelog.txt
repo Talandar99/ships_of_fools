@@ -1,4 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.11.0
+Date: 2026-03-10
+  Changes:
+    - added maraxsis as required dependency
+    - added planetaris compression science pack as requirement for maraxsis discovery
+    - maraxsis glass panes renamed to pressure resistant glass
+    - arig heavy glass now require maraxsis glass panes to research and in recipe
+    - all fusion machines mod settings are now set to true and hidden
+    - depths of nauvis: deep sea mechanic, block elevated rails on water, and 
+      generate uranium only on water settings are now set to true and hidden
+    - added logistics as prerequisite for logistic science pack
+    - nuclear science pack Lock Cerys mixed-oxide reactor behind Maraxsis molten salt reactor 
+      setting is now set to true and hidden
+---------------------------------------------------------------------------------------------------
 Version: 0.10.0
 Date: 2026-03-01
   Changes:
