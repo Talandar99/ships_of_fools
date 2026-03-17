@@ -19,6 +19,8 @@ force_setting("bool", "space-spidertron-compatibility", true)
 force_setting("bool", "lignumis-msppr", true)
 force_setting("bool", "quality-assembler-require-promethium-plates", true)
 force_setting("bool", "msppr-cerys", true)
+force_setting("bool", "maraxsis-msppr", true)
+
 -- force pelagos science addition to progression
 force_setting("bool", "pelagos-contribute-to-aquilo-discovery", true)
 force_setting("bool", "pelagos-contribute-to-promethium-science", true)
@@ -34,8 +36,10 @@ force_setting("bool", "fulgenemy-disable-loot", true)
 -- molten plastic
 force_setting("bool", "replace-plastic", true)
 force_setting("bool", "dynamic-recipes", true)
+
 -- dynamic_platform lighting force deep dark
 force_setting("bool", "dynamic_platform_deep_darkness", true)
+
 -- nuclear science pack
 force_setting("bool", "lock-nuclear-science-pack-behind-cerys", true)
 force_setting("bool", "refillable-mixed-oxide-reactor-equipment", true)
@@ -43,6 +47,7 @@ force_setting("bool", "nuclear-assembling-machine", true)
 force_setting("bool", "refillable-fission-reactor-equipment", true)
 force_setting("bool", "nuclear-science-pack-centrifuge-prod-bonus", true)
 force_setting("bool", "lock-mixed-oxide-reactor-behind-maraxsis-salt-reactor", true)
+force_setting("bool", "spidertron-require-fuel-cells", true)
 
 -- fusion machines
 force_setting("bool", "refillable-fusion-reactor-equipment", true)
@@ -51,6 +56,15 @@ force_setting("bool", "fusion-lab", true)
 force_setting("bool", "fusion-reactor-and-generator-buff", true)
 force_setting("bool", "fusion-fuel-cell-buff", true)
 
+-- depths of nauvis
 force_setting("bool", "deep-sea-mechanic", true)
 force_setting("bool", "block-elevated-rails-on-deep-sea", true)
 force_setting("bool", "generate-uranium-only-on-water", true)
+
+--local parts production
+force_setting("bool", "gleba-local-rocket-part", true)
+force_setting("bool", "vulcanus-local-rocket-part", true)
+force_setting("bool", "aquilo-local-rocket-part", true)
+force_setting("bool", "arig-local-rocket-part", true)
+force_setting("bool", "vesta-local-rocket-part", true)
+force_setting("bool", "lignumis-local-rocket-part", true)
