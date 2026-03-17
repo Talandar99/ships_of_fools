@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.12.1
+Date: 2026-03-17
+  Bugfixes:
+    - in some cases assembling machine 1 was still present in recipes. 
+      It should be now removed properly
+---------------------------------------------------------------------------------------------------
 Version: 0.12.0
 Date: 2026-03-16
   Changes:

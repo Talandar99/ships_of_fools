@@ -69,6 +69,22 @@ local function hide_technology_and_rewire(old_tech, new_tech)
 end
 
 local function hide_by_name(name)
+	for _, recipe in pairs(data.raw.recipe) do
+		local containers = { recipe, recipe.normal, recipe.expensive }
+
+		for _, r in pairs(containers) do
+			if r and r.ingredients then
+				for i = #r.ingredients, 1, -1 do
+					local ing = r.ingredients[i]
+
+					if ing.name == name or ing[1] == name then
+						table.remove(r.ingredients, i)
+					end
+				end
+			end
+		end
+	end
+
 	for proto_type, proto in pairs(data.raw) do
 		local e = proto[name]
 		if e and proto_type ~= "item" and proto_type ~= "recipe" then
