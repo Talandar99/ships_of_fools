@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.13.0
+Date: 2026-03-23
+  Changes:
+    - red science pack recipe now give 2 science packs instead of 1
+    - fulgora orbital defence added ad required compatibility. 
+---------------------------------------------------------------------------------------------------
 Version: 0.12.1
 Date: 2026-03-17
   Bugfixes:

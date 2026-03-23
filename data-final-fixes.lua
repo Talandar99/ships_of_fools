@@ -163,6 +163,9 @@ data.raw["recipe"]["automation-science-pack"].ingredients = {
 	{ type = "item", name = "iron-gear-wheel", amount = 1 },
 	{ type = "item", name = "wood", amount = 1 },
 }
+data.raw["recipe"]["automation-science-pack"].results =
+	{ { type = "item", name = "automation-science-pack", amount = 2 } }
+
 data.raw["recipe"]["logistic-science-pack"].ingredients = {
 	{ type = "item", name = "transport-belt", amount = 1 },
 	{ type = "item", name = "wood-transport-belt", amount = 1 },
