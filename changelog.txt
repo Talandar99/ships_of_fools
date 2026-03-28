@@ -1,9 +1,20 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.13.0
-Date: 2026-03-23
+Date: 2026-03-28
   Changes:
+    - added hydraulic machines as required dependency
+    - added pistol is fake as required dependency
+    - added fulgora orbital defence as required compatibility. 
+    - removed code responsible for removing pistol on respawn as it's now done
+      by other mod (pistol is fake)
+    - Arig setting "Arig press use steam" is set to true and hidden
+    - Hydraulic Machines setting "Allow industrial modules in Arig press" is now 
+      set to true and hidden
+    - Hydraulic Machines setting "Allow industrial modules in Lignumis lumber mill" 
+      is now set to true and hidden
+    - Depths of Nauvis setting "Generate oil only on water" is now set to true and hidden 
+  Balancing:
     - red science pack recipe now give 2 science packs instead of 1
-    - fulgora orbital defence added ad required compatibility. 
 ---------------------------------------------------------------------------------------------------
 Version: 0.12.1
 Date: 2026-03-17
