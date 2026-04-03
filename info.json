@@ -1,6 +1,6 @@
 {
     "name": "ships_of_fools",
-    "version": "0.13.0",
+    "version": "0.14.0",
     "title": "Ships Of Fools",
     "author": "Talandar",
     "dependencies": [
@@ -47,6 +47,8 @@
         "fulgora-orbital-defence",
         "hydraulic_machines",
         "pistol_is_fake",
+        "diesel_foundry",
+        "larger-machines",
         "! planet-muluna",
         "! cubium",
         "! metal-and-stars",

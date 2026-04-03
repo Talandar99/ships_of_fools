@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.14.0
+Date: 2026-04-01
+  Changes:
+    - added diesel foundry as required dependency
+  Potentially Breaking Changes:
+    - added larger machines as required dependency. This changes size of some existing machines so it 
+      can break existing factories. I think larger machines look spectacular so it is worth it. 
+---------------------------------------------------------------------------------------------------
 Version: 0.13.0
 Date: 2026-03-28
   Changes:
