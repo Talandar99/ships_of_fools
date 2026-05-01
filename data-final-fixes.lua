@@ -239,6 +239,9 @@ table.insert(
 	{ "planetaris-compression-science-pack", 1 }
 )
 require("space-locked-recipes")
-
+--maraxsis
+table.insert(data.raw["technology"]["maraxsis-effect-transmission-2"].prerequisites, "lubrication-tower")
 -- science pack
 table.insert(data.raw["technology"]["logistic-science-pack"].prerequisites, "logistics")
+-- cerys
+table.insert(data.raw["technology"]["moon-discovery-cerys"].prerequisites, "coconut-drop-technology")

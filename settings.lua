@@ -57,7 +57,7 @@ force_setting("bool", "fusion-reactor-and-generator-buff", true)
 force_setting("bool", "fusion-fuel-cell-buff", true)
 
 -- depths of nauvis
-force_setting("bool", "deep-sea-mechanic", true)
+force_setting("bool", "depthsofnauvis-deep-sea-mechanic", true)
 force_setting("bool", "block-elevated-rails-on-deep-sea", true)
 force_setting("bool", "generate-uranium-only-on-water", true)
 force_setting("bool", "generate-oil-only-on-water", true)
@@ -74,3 +74,6 @@ force_setting("bool", "lignumis-local-rocket-part", true)
 force_setting("bool", "industrial-module-arig-press", true)
 force_setting("bool", "industrial-module-lignumis-lumber-mill", true)
 force_setting("bool", "press-is-steam-powered", true)
+
+--deepsea-meachanic
+force_setting("bool", "deepsea-on-gleba", true)
