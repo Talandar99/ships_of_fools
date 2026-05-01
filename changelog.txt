@@ -5,6 +5,8 @@ Date: 2026-05-01
     - maraxsis beacons now require lubrication tower to be researched first
     - cerys discovery now require coconut drop technology to be researched first
     - deepsea mechanic is now pernamently enabled on gleba 
+    - age of production is now marked as incompatible. It add a lot of buldings just for sake of it 
+      and overshadow existing planetary special buildings in process.
 ---------------------------------------------------------------------------------------------------
 Version: 0.14.0
 Date: 2026-04-01
