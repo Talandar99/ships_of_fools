@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.15.1
+Date: 2026-06-10
+  Bugfixes:
+    - Introduced recipe to make stone furnace out of stone bricks to prevent softlock on Cerys
+---------------------------------------------------------------------------------------------------
 Version: 0.15.0
 Date: 2026-05-01
   Changes:
