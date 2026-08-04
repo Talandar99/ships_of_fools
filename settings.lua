@@ -77,3 +77,5 @@ force_setting("bool", "press-is-steam-powered", true)
 
 --deepsea-meachanic
 force_setting("bool", "deepsea-on-gleba", true)
+--larger machines
+force_setting("bool", "larger-machines-enlarge-cryogenic-plant", false)

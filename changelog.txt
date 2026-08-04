@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.16.0
+Date: 2026-08-04
+  Balancing:
+  Changes:
+    - Larger Machines: cryogenic plant will now always be small, setting is lock and hidden. 
+      You can only connect plasma in small version, and you need to use plasma for some recipes
+    - Added alternative recipe for logistic science pack that can be only made on cerys
+  Balancing:
+    - reduced heavy oil requirement in Vulcanus rocket part (300->150)
+---------------------------------------------------------------------------------------------------
 Version: 0.15.1
 Date: 2026-06-10
   Bugfixes:
