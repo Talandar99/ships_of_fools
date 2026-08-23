@@ -66,7 +66,7 @@ force_setting("bool", "generate-oil-only-on-water", true)
 force_setting("bool", "gleba-local-rocket-part", true)
 force_setting("bool", "vulcanus-local-rocket-part", true)
 force_setting("bool", "aquilo-local-rocket-part", true)
-force_setting("bool", "arig-local-rocket-part", true)
+force_setting("bool", "arig-local-rocket-part", false)
 force_setting("bool", "vesta-local-rocket-part", true)
 force_setting("bool", "lignumis-local-rocket-part", true)
 

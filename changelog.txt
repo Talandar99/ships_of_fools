@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.17.0
+Date: 2026-08-23
+  Changes:
+    - Local parts production: Disabled custom arig rocket part recipe as latest arig
+      version added it's own. I want to be in line with official one
+    - recyclers now accept quality modules
+---------------------------------------------------------------------------------------------------
 Version: 0.16.0
 Date: 2026-08-04
   Balancing:

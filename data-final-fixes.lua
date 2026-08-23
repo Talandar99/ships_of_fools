@@ -154,7 +154,7 @@ hide_by_name("electric-mining-drill")
 hide_technology_and_rewire("epic-quality", "quality-module")
 hide_technology_and_rewire("legendary-quality", "quality-module")
 data.raw["assembling-machine"]["crusher"].allowed_effects = { "consumption", "speed", "productivity", "pollution" }
-data.raw["furnace"]["recycler"].allowed_effects = { "consumption", "speed", "productivity", "pollution" }
+--data.raw["furnace"]["recycler"].allowed_effects = { "consumption", "speed", "productivity", "pollution" }
 
 -- science
 hide_by_name("aps-pelagos-automation-science-pack")
